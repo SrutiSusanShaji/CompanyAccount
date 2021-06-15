@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+<menu>
+        <add id="CompanyAccount_Companies::companies" title="Companies" module="CompanyAccount_Companies" sortOrder="20"
+         resource="CompanyAccount_Companies::companies" />
+
+        <add id="CompanyAccount_Companies::menu1" title="List of Companies" module="CompanyAccount_Companies" sortOrder="10"
+         parent="CompanyAccount_Companies::companies" action="mainmenu/index/index" resource="CompanyAccount_Companies::menu1" />
+</menu>
+</config>
